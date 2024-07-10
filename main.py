@@ -1,8 +1,11 @@
 from pytube import YouTube
+import os
 
-#link = input("Link: ")
-link = "https://www.youtube.com/shorts/GGJPsZxLCXc"
+print(os.getcwd())
+
+link = input("Link: ")
 
 yt = YouTube(link)
 video = yt.streams.get_highest_resolution()
-video.download()
+
+video.download("/Users/ahmetcol/Downloads/randm")
