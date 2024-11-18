@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Custom
+reels/
+youtube_secrets.json
+
 # Distribution / packaging
 .Python
 build/
