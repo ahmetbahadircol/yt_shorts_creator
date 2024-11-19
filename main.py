@@ -8,6 +8,9 @@ from pathlib import Path
 
 
 async def main(code: str):
+    if not code:
+        raise RuntimeError("Reels Code is required")
+
     await download_instagram_reel(code)
 
     folder_path = Path(f"reels/{code}")
@@ -45,5 +48,5 @@ async def main(code: str):
 
 
 if __name__ == "__main__":
-    REELS_CODE = ""
+    REELS_CODE = "C3akEcIANZs"
     asyncio.run(main(REELS_CODE))
