@@ -48,5 +48,5 @@ async def main(code: str):
 
 
 if __name__ == "__main__":
-    REELS_CODE = "C3akEcIANZs"
+    REELS_CODE = ""
     asyncio.run(main(REELS_CODE))
