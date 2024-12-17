@@ -36,14 +36,46 @@ async def main(code: str):
 
     content = content.replace("\n", " ").strip()
 
-    if len(content) > 99:
-        breakpoint()
-
+    print(len(content))
+    breakpoint()
     await upload_video(
         video_file,
         content,
         "Rick and Morty #shorts #rickandmorty #funny #viral #rickandmortyclips #clips",
-        ["shorts", "rickandmorty", "viral", "youtube", "funny"],
+        [
+            "rickandmorty",
+            "rickandmortyshorts",
+            "adultswim",
+            "ricksanchez",
+            "mortysmith",
+            "rickandmortyclips",
+            "rickandmortyfunny",
+            "funnycartoonclips",
+            "scificartoons",
+            "rickandmortybestsenes",
+            "rickandmortyhumor",
+            "wubbalubbadubdub",
+            "picklerick",
+            "portalgun",
+            "rickandmortyseason",
+            "rickandmortyepisodes",
+            "trendingshorts",
+            "youtubeshorts",
+            "comedyanimation",
+            "adultcartoons",
+            "cartoonshorts",
+            "rickandmortyfans",
+            "rickandmortyfan",
+            "rickandmortyquotes",
+            "adultcartoonclips",
+            "cartoonfunny",
+            "animationfunny",
+            "funnyanimation",
+            "animatedcomedy",
+            "cartooncomedy",
+            "sciencefiction",
+            "animatedshorts",
+        ],
     )
 
 
