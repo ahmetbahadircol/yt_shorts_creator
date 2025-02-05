@@ -37,6 +37,7 @@ async def main(code: str):
     content = content.replace("\n", " ").strip()
 
     print(len(content))
+    print(content)
     breakpoint()
     await upload_video(
         video_file,
